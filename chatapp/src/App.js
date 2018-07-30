@@ -13,7 +13,6 @@ class App extends Component {
         <Chat />
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
-      소ㅓ영소영
         </p>
 
       </div>

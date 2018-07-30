@@ -26,16 +26,9 @@ class Chat extends React.Component{
 
         this.sendMessage = ev => {
             ev.preventDefault();
-            var msg;
-            msg = this.state.message;
-            if (this.state.message === "a")
-          {
-              msg = this.state.message +"WOWWWOOWOWOWOW";
-          }
-
             this.socket.emit('SEND_MESSAGE', {
                 author: this.state.username,
-                message: msg //this.state.message
+                message: this.state.message
             })
             this.setState({message: ''});
 
